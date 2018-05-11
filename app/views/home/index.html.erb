@@ -1,0 +1,10 @@
+<div class="jumbotron">
+        <div class="container text-center">
+          <h1 class="display-1 yeon">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1><br><br>
+          <%if user_signed_in?%>
+            <%= link_to '로그아웃', destroy_user_session_path, :method => :delete, class:"btn btn-dark yeon btn-lg"%>
+          <%else%>
+            <%= link_to '회원가입', new_user_registration_path , class:"btn btn-dark yeon btn-lg"%>
+          <%end%>
+        </div>
+      </div>
